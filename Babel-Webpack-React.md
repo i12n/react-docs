@@ -2,54 +2,51 @@
 
 1. 依赖的 package 安装
   
-  ```
-  npm install react --save
-  npm install react-dom --save
-  npm install babel-core --save-dev
-  npm install babel-loader --save-dev
-  npm install babel-preset-react --save-dev
-  npm install babel-preset-es2015 --save-dev
-  npm install webpack --save-dev
-  npm install webpack-dev-server --save-dev
-  ```
+	  npm install react --save
+	  npm install react-dom --save
+	  npm install babel-core --save-dev
+	  npm install babel-loader --save-dev
+	  npm install babel-preset-react --save-dev
+	  npm install babel-preset-es2015 --save-dev
+	  npm install webpack --save-dev
+	  npm install webpack-dev-server --save-dev
 
 2. 写一个简单的组件, 保存为 hello.jsx
-  ```
-  import React, {Component} from 'react';
 
-  export default class Hello extends Component {
-    render() {
-      return (<h1>Hello World</h1>)
+    import React, {Component} from 'react';
+
+    export default class Hello extends Component {
+      render() {
+        return (<h1>Hello World</h1>)
+      }
     }
-  }
-  ```
+
   
 3. 写一个简单页面, 保存为 index.html
 
-  ```
-  <!DOCTYPE html>
-  <html>
-    <head></head>
-    <body>
-    <div id="app"></app>
-    <script type="text/javascript" src="bundle.js"></script>
-    </body>
-  </html>
-  ```
+    <!DOCTYPE html>
+    <html>
+      <head></head>
+      <body>
+      <div id="app"></app>
+      <script type="text/javascript" src="bundle.js"></script>
+      </body>
+    </html>
+
 
 4. 将组件渲染到页面，保存为 main.js
 
-  ```
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import Hello from './hello'
 
-  main();
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import Hello from './hello'
 
-  function main() {
-    ReactDOM.render(<Hello />, document.getElementById('app'))
-  }
-  ```
+    main();
+
+    function main() {
+      ReactDOM.render(<Hello />, document.getElementById('app'))
+    }
+
 
 5. webpack 配置，保存为 webpack.config.js
 	
