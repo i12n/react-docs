@@ -33,7 +33,8 @@
 		  </body>
 		</html>
 
-
+	> 使用 `html-webpack-plugin` 这个插件, 可以方便生成一个 html 文件
+	
 4. 将组件渲染到页面，保存为 main.js
 
 
@@ -87,7 +88,7 @@
 		}
 
 		
-8. 运行命令 `npm run dev`, 在浏览器中访问：http://localhost:8080/index.html
+8. 运行命令 `npm run dev`, 在浏览器中访问：http://localhost:8080/index.html 
 
 9. 参考文档
 
